@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const fetchPosts=createAsyncThunk("todos/Fetchposts", async()=>{
-    const response=await fetch("http://jsonplaceholder.typicode.com/posts");
+    const response=await fetch("https://jsonplaceholder.typicode.com/posts");
     return response.json();
 })
 const todoSlice=createSlice({
